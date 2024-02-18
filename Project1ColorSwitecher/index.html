@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #141414;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">This is my color selector project</h1>
+    <button style="background-color: red; width: 100px; height: 100px;" id="red">Red</button>
+    <button style="background-color: yellow; width: 100px; height: 100px;" id="yellow">Yellow</button>
+    <button style="background-color: green; width: 100px; height: 100px;" id="green">Green</button>
+    <button style="background-color: blue; width: 100px; height: 100px;" id="blue">blue</button>
+
+    <script>
+
+        //document.addEventListener("DOMContentLoaded",function(){
+
+        const red = document.getElementById('red')
+        const blue = document.getElementById('blue')
+        const yellow = document.getElementById('yellow')
+        const green = document.getElementById('green')
+
+        red.addEventListener("click",function(){
+            document.body.style.backgroundColor="red"
+        })
+
+        blue.addEventListener("click",function(){
+            document.body.style.backgroundColor="blue"
+
+        })
+        green.addEventListener("click",function(){
+            document.body.style.backgroundColor="green"
+
+        })
+        yellow.addEventListener("click",function(){
+            document.body.style.backgroundColor="yellow"
+
+        })
+
+
+       // })
+
+        
+    </script>
+</body>
+</html>
